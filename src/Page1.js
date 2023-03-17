@@ -9,10 +9,20 @@ import FootF from "./components/FootF";
 import { useNavigate } from "react-router-dom";
 import FooterGif from "./FooterGif";
 
-import { testUsers, co, event } from './components/JSON/alldata';
+
+import {  co, event } from './components/JSON/alldata';
+
+
 
 
 function Page1() {
+
+
+  
+
+
+
+
 
   const mysecondpage = useNavigate();
 
@@ -38,13 +48,15 @@ function Page1() {
       </div>
 
       <div className="compo" onClick={handleClick} style={{ display: 'flex', marginTop: '5px', marginLeft: '30px' }}>
-        {testUsers.map((item, i) => (
+        
           <div className="compo1" style={{
             marginLeft: '30px',
           }}>
-            <ComCard1 data={item} onClick={() => handleClick()} />
-          </div>
-        ))}
+            <div style={{display:"flex",padding:'10px'}}>
+            <ComCard1  onClick={() => handleClick()} />
+            </div>
+             </div>
+      
       </div>
       <div style={{
         display: 'flex',
@@ -83,8 +95,8 @@ function Page1() {
         ))}
 
       </div>
-      <FooterGif />
-      <FootF />
+      <FooterGif className='foot-gif'/>
+      <FootF className='footercard' />
 
 
     </>

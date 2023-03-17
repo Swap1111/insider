@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card } from 'antd'
+import { Card} from 'antd'
 export default function ComC2(props) {
   return (
     <>
@@ -17,6 +17,7 @@ export default function ComC2(props) {
           <span>{props.data.desc}</span>
 
         </Card>
+      
       </div>
     </>
   )
